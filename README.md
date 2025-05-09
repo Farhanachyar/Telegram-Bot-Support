@@ -71,8 +71,6 @@ To get the required Channel ID, Group ID, and User IDs, you'll need to use [@Cha
 6. Add the bot to your discussion group and forward a message to get DISCUSSION_GROUP_ID
 7. Get the IDs of your support staff members the same way
 
-> ⚠️ **Important**: After successfully deploying and starting your bot, send a random message to it right away to prevent "peer ID invalid" errors. This must be done after the bot is already active.
-
 #### Step 5: Configure environment variables
 
 Create a `.env` file with the following variables:
@@ -109,6 +107,9 @@ docker run -d \
   -e SUPPORT_STAFF_IDS=id1,id2,id3 \
   telegram-support-bot
 ```
+
+
+> ⚠️ **Important**: After successfully deploying and starting your bot, send a random message to it right away to prevent "peer ID invalid" errors. This must be done after the bot is already active.
 
 ## 📝 Usage
 
