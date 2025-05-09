@@ -71,7 +71,7 @@ To get the required Channel ID, Group ID, and User IDs, you'll need to use [@Cha
 6. Add the bot to your discussion group and forward a message to get DISCUSSION_GROUP_ID
 7. Get the IDs of your support staff members the same way
 
-> ⚠️ **Important**: When you start your bot for the first time, send a random message to it right away to prevent "peer ID invalid" errors.
+> ⚠️ **Important**: After successfully deploying and starting your bot, send a random message to it right away to prevent "peer ID invalid" errors. This must be done after the bot is already active.
 
 #### Step 5: Configure environment variables
 
