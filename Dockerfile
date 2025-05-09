@@ -20,7 +20,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Salin semua file kode Anda ke dalam container
 COPY . .
 # Buat shell script untuk menjalankan kedua file Python
-RUN echo '#!/bin/bash\npython health_check.py & python chat_id.py' > start.sh
+RUN echo '#!/bin/bash\npython health_check.py & python main.py' > start.sh
 RUN chmod +x start.sh
 EXPOSE 8000
 # Gunakan shell script sebagai entrypoint
