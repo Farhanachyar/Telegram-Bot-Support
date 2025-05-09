@@ -19,6 +19,21 @@ A powerful Telegram bot that helps manage support tickets between users and your
 - A Telegram account
 - Bot token from [@BotFather](https://t.me/BotFather)
 
+## 🔧 Telegram Channel & Group Setup
+
+This bot requires:
+1. A Telegram channel where support tickets will be posted
+2. A discussion group linked to that channel where staff can collaborate
+3. Your bot must be an admin in both the channel and discussion group
+
+**How to link a discussion group to a channel:**
+1. Go to your channel
+2. Click on the channel name at the top
+3. Select "Manage Channel"
+4. Select "Discussion"
+5. Choose an existing group or create a new one
+6. Make sure your bot is an admin in both places
+
 ## 🚀 Quick Deployment
 
 ### ☁️ Deploy to Koyeb (Recommended)
@@ -59,17 +74,22 @@ pip install -r requirements.txt
    - Choose a name and username for your bot
    - Once created, you'll receive a bot token
 
-#### Step 4: Setup required IDs using ChatID_HyperBot
+#### Step 4: Setup your channels and get required IDs
 
-To get the required Channel ID, Group ID, and User IDs, you'll need to use [@ChatID_HyperBot](https://t.me/ChatID_HyperBot):
+1. Create a Telegram channel for support tickets
+2. Link this channel with a discussion group for staff collaboration
+3. **Add your newly created bot as an admin** to both the channel and discussion group
+4. Send a random message in your channel
+5. Send a random message in your discussion group
+6. Forward both messages to [@ChatID_HyperBot](https://t.me/ChatID_HyperBot)
+7. ChatID_HyperBot will respond with the Chat IDs you need:
+   - Use the channel message's Chat ID as your SUPPORT_CHANNEL_ID
+   - Use the group message's Chat ID as your DISCUSSION_GROUP_ID
+8. For SUPPORT_STAFF_IDS, have each staff member send a message to ChatID_HyperBot to get their User IDs
 
-1. Start a chat with [@ChatID_HyperBot](https://t.me/ChatID_HyperBot)
-2. Send a random message to the bot to get your User ID
-3. Create a Telegram channel for support tickets
-4. Link this channel with a discussion group for staff collaboration
-5. Add the bot to your support channel and forward a message to get SUPPORT_CHANNEL_ID
-6. Add the bot to your discussion group and forward a message to get DISCUSSION_GROUP_ID
-7. Get the IDs of your support staff members the same way
+> ⚠️ **Important**: ChatID_HyperBot is only used to retrieve the necessary IDs. Your own support bot (not ChatID_HyperBot) must be added as an admin to both your channel and discussion group.
+
+> ⚠️ **Important**: After successfully deploying and starting your bot, send a random message to it right away to prevent "peer ID invalid" errors. This must be done after the bot is already active.
 
 #### Step 5: Configure environment variables
 
@@ -107,9 +127,6 @@ docker run -d \
   -e SUPPORT_STAFF_IDS=id1,id2,id3 \
   telegram-support-bot
 ```
-
-
-> ⚠️ **Important**: After successfully deploying and starting your bot, send a random message to it right away to prevent "peer ID invalid" errors. This must be done after the bot is already active.
 
 ## 📝 Usage
 
