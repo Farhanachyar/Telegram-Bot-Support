@@ -40,7 +40,7 @@ This bot requires:
 
 The easiest way to deploy this bot is using Koyeb's one-click deployment:
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=telegram-bot-support&repository=Farhanachyar%2FTelegram-Bot-Support&branch=main&builder=dockerfile&instance_type=free&instances_min=0&autoscaling_sleep_idle_delay=300)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=telegram-bot-support&repository=Farhanachyar%2FTelegram-Bot-Support&branch=main&builder=dockerfile&instance_type=free&regions=was&instances_min=0&autoscaling_sleep_idle_delay=300)
 
 1. Fork the repository to your GitHub account
 2. Use the deploy button above to connect with Koyeb
