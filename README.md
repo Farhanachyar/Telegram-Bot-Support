@@ -1,6 +1,21 @@
-# 🤖 Telegram Support Bot
-
-A powerful Telegram bot that helps manage support tickets between users and your support staff, with seamless media handling, collaborative discussion, and ticket management capabilities.
+🤖 Telegram Support Bot<p align="center">
+  <h4 align="center">A powerful Telegram bot that helps manage support tickets between users and your support staff.</h4>
+  <p align="center">
+    <a href="https://codeclimate.com/github/Farhanachyar/Telegram-Bot-Support/maintainability"><img src="https://api.codeclimate.com/v1/badges/c60f42d7d0b61bd33e98/maintainability" /></a>
+    <a href="https://github.com/Farhanachyar/Telegram-Bot-Support/actions/workflows/test-deploy.yml"><img src="https://github.com/Farhanachyar/Telegram-Bot-Support/actions/workflows/test-deploy.yml/badge.svg" /></a>
+    <a href="https://github.com/Farhanachyar/Telegram-Bot-Support/issues"><img src="https://img.shields.io/github/issues/Farhanachyar/Telegram-Bot-Support"/></a>
+    <a href="https://github.com/Farhanachyar/Telegram-Bot-Support/stargazers"><img src="https://img.shields.io/github/stars/Farhanachyar/Telegram-Bot-Support"/></a>
+    <a href="https://github.com/Farhanachyar/Telegram-Bot-Support/network/members"><img src="https://img.shields.io/github/forks/Farhanachyar/Telegram-Bot-Support"/></a>
+    <a href="https://github.com/Farhanachyar/Telegram-Bot-Support/commits/main"><img src="https://img.shields.io/github/last-commit/Farhanachyar/Telegram-Bot-Support/main"/></a>
+    <a href="https://github.com/arifszn/gitprofile/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"/></a>
+    <a href="https://github.com/Farhanachyar/Telegram-Bot-Support/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Farhanachyar/Telegram-Bot-Support"/></a>
+  </p>
+  <p align="center">
+    <a href="https://github.com/Farhanachyar/Telegram-Bot-Support/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Farhanachyar/Telegram-Bot-Support/discussions">Request Feature</a>
+  </p>
+</p>
 
 ## ✨ Features
 
