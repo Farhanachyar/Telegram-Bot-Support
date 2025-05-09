@@ -44,7 +44,13 @@ The easiest way to deploy this bot is using Koyeb's one-click deployment:
 
 1. Fork the repository to your GitHub account
 2. Use the deploy button above to connect with Koyeb
-3. Configure the environment variables (see below)
+3. **Important**: You must manually add all required environment variables in the Koyeb interface:
+   - `API_ID` (from my.telegram.org)
+   - `API_HASH` (from my.telegram.org)
+   - `BOT_TOKEN` (from BotFather)
+   - `SUPPORT_CHANNEL_ID` (from ChatID_HyperBot)
+   - `DISCUSSION_GROUP_ID` (from ChatID_HyperBot)
+   - `SUPPORT_STAFF_IDS` (comma-separated list of staff User IDs)
 4. Deploy and enjoy your support bot!
 
 ### 🛠️ Manual Installation
@@ -127,6 +133,8 @@ docker run -d \
   -e SUPPORT_STAFF_IDS=id1,id2,id3 \
   telegram-support-bot
 ```
+
+> ⚠️ **Note for Koyeb users**: The Dockerfile helps simplify deployment, but you must still manually add all the environment variables listed above in the Koyeb interface for your bot to function properly.
 
 ## 📝 Usage
 
